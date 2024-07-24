@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css"/>
     <title>Document</title>
 </head>
 <body>
+    <div class="Weather-app">
     <header>
         <form>
             <input type="search"
-            placeholder="Enter a city"
-            required/>
+            placeholder="Enter a city..."
+            required
+            class="search-input"/>
             <input type="submit"
-            value="Search"/>
+            value="Search"
+            class="search-button"/>
         </form>
     </header>
-    <h1> Paris</h1>
+    <main> <div class="current-weather">
+        <div>
+    <h1 class="current-city"> Paris</h1>
     <p> <span>Tuesday 16:26, sunny. </br>
-    Humidity: 5%, Wind: 2.5km/h</span>
-</p><div>☀️29°C</div>
-    <footer> This Project was coded by Siphesihle Mkhwanazi on GitHub hosted on Netlify </footer>
+    Humidity:<strong> 5%,</strong> Wind: <strong>5km/h</strong></span>
+    </div>
+</p><div class="current-temperature"><span class: current-temperature-icon>☀️</span><span class="current-temperature-value">29</span> <span class="current-temperature-icon">°C</span></div>
+</div>
+</main>
+    <footer> <p>This Project was coded by Siphesihle Mkhwanazi on GitHub hosted on Netlify. </p></footer>
+    </div>
 </body>
 </html>
