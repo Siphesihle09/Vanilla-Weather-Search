@@ -9,11 +9,12 @@
 <body>
     <div class="Weather-app">
     <header>
-        <form>
+        <form id="search-form">
             <input type="search"
             placeholder="Enter a city..."
             required
-            class="search-input"/>
+            class="search-input"
+            id="search-input" />
             <input type="submit"
             value="Search"
             class="search-button"/>
@@ -21,7 +22,7 @@
     </header>
     <main> <div class="current-weather">
         <div>
-    <h1 class="current-city"> Paris</h1>
+    <h1 class="current-city" id="current-city"> Paris</h1>
     <p> <span class="current-details">Tuesday 16:26, sunny. </br>
     Humidity:<strong> 5%,</strong> Wind: <strong>5km/h</strong></span>
     </div>
