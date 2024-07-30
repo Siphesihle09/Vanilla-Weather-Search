@@ -5,9 +5,11 @@ function showTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let descriptionElement = document.querySelector("#description");
-  let timeElement = document.querySelector("present-time");
+  let timeElement = document.querySelector("#present-time");
   let date = new Date(response.data.time * 1000);
+  let iconELement = document.querySelector("#temperature-icon");
   console.log(response.data);
+  iconELement.innerHTML = `<img src= "${response.data.condition.icon_url}" class="current-temperature-icon" />`;
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
@@ -53,3 +55,4 @@ function searchCity(city) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchEngine);
+searchCity("Durban");

@@ -36,10 +36,10 @@ header {
 }
 .current-weather {
   display: flex;
-  justify-content: space-between;
-  padding-right: 50px;
+  justify-content: space-around;
   padding-top: 20px;
   padding-bottom: 30px;
+  margin-left: 3px;
   border-top: 1px solid #d5d8dc;
   border-bottom: 1px solid #d5d8dc;
 }
@@ -59,23 +59,22 @@ footer {
   text-align: center;
 }
 .current-temperature {
-  font-size: 40px;
+  display: flex;
 }
 .current-temperature-icon {
-  position: relative;
-  font-size: 40px;
-  top: -8px;
-  margin-right: 5px;
+  width: 88px;
+  height: 88px;
+  margin-top: 35px;
 }
 .current-temperature-value {
   font-size: 80px;
   font-weight: bold;
-  top: 20px;
+  margin-left: 12px;
+  margin-top: 35px;
 }
 .current-temperature-unit {
-  position: relative;
   font-size: 28px;
-  top: -38px;
+  padding-top: 20px;
 }
 a {
   color: #2980b9;
